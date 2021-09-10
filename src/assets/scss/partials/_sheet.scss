@@ -1,0 +1,57 @@
+.sheet {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    width: 100%;
+    background-color: $white;
+    border-radius: 40px;
+    z-index: 20;
+    overflow: hidden;
+    .search-input {
+        padding: 20px;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    &-content {
+        box-sizing: border-box;
+        &_selected {
+            padding: 30px;
+            box-sizing: border-box;
+            overflow: scroll;
+            .folder-flex {
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+        }
+    }
+    &-section {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 30px;
+        border-bottom: 1px solid $grey;
+        .section {
+            width: 50%;
+            &-button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+                padding: 20px 0;
+                background-color: transparent;
+                border: 0;
+                font-size: 18px;
+                color: $text;
+                font-family: 'Poppins', sans-serif;
+                &.active {
+                    color: $blue4;
+                    border-bottom: 4px solid $blue4;
+                    border-bottom-left-radius: 3px;
+                    border-bottom-right-radius: 3px;
+                }
+            }
+        }
+    }
+}

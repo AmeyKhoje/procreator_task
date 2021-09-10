@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+#root {
+    width: 100%;
+    display: flex;
+}
+
+@import "./partials/colors";
+@import "./partials/globals";
+@import "./partials/waves";
+@import "./partials/cloudUserInfo";
+@import "./partials/buttonRect";
+@import "./partials/sheet";
+@import "./partials/input";
+@import "./partials/folderCard";

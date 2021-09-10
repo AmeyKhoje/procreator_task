@@ -1,0 +1,27 @@
+.input-container {
+    padding: 5px 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.input {
+    width: 100%;
+    border-radius: 50px;
+    padding: 12px 10px 12px 50px;
+    background-color: $grey;
+    color: $text;
+    border: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    &-icon {
+        position: absolute;
+        left: 15px;
+        top: 18px;
+        svg {
+            stroke: #959fba;
+            stroke-width: 3;
+        }
+    }
+}

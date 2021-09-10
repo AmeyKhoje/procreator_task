@@ -1,0 +1,46 @@
+.cloud-user_info {
+    width: 100%;
+    background-color: $blue4;
+    padding: 30px 30px 100px 30px;
+    box-sizing: border-box;
+    &_name {
+        font-size: 34px;
+        font-weight: 500;
+        line-height: 1.2;
+        &-sec {
+            padding-bottom: 20px;
+        }
+    }
+    p {
+        font-size: 20px;
+        font-weight: 500;
+        opacity: 0.5;
+    }
+    &_storage {
+        font-size: 34px;
+        font-weight: 500;
+        line-height: 1.2;
+        span {
+            font-size: 18px;
+            opacity: 0.5;
+        }
+    }
+    &_det {
+        padding-bottom: 15px;
+    }
+    .progress {
+        width: 100%;
+        height: 6px;
+        background-color: #3c64c7;
+        border-radius: 10px;
+        position: relative;
+        .progress-shown {
+            position: absolute;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background-color: $pink;
+            border-radius: 10px;
+        }
+    }
+}

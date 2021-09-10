@@ -1,0 +1,59 @@
+.bg-blue0 {
+    background-color: $blue0;
+    fill: $blue0;
+}
+
+.bg-blue1 {
+    background-color: $blue1;
+    fill: $blue1;
+}
+
+.bg-blue2 {
+    background-color: $blue2;
+    fill: $blue2;
+}
+
+.bg-blue3 {
+    background-color: $blue3;
+    fill: $blue3;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.text-white {
+    color: $white;
+}
+
+.text-accent {
+    color: $text;
+}
+
+.flex {
+    display: flex;
+    &-center {
+        align-items: center;
+    }
+    &.justify-between {
+        justify-content: space-between;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h5,
+p,
+a {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+button,
+span,
+a {
+    font-family: 'Poppins', sans-serif;
+}
