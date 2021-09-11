@@ -11,12 +11,12 @@ const BottomTabNavigator = (props) => {
             <div className='bottom-tab_container'>
                 <ul className="bottom-tab_list flex flex-center">
                     <li className="bottom-tab_list-item">
-                        <NavLink to="/">
+                        <NavLink to="/home">
                             <img src={Home} alt="" />
                         </NavLink>
                     </li>
                     <li className="bottom-tab_list-item">
-                        <NavLink to="/">
+                        <NavLink to="/local-storage">
                             <img src={Check} alt="" />
                         </NavLink>
                     </li>
