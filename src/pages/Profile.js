@@ -65,9 +65,6 @@ const Profile = (props) => {
                 <ProfileListCard head="Devices" subhead="iPhone, Macbook, iPad" actionType="arrow" />
                 <ProfileListCard head="Camera uploads"actionType="action" />
                 <ProfileListCard head="Use data for file transfer" actionType="action" />
-
-                {/* <ProfileListCard head="Camera uploads"actionType="action" />
-                <ProfileListCard head="Use data for file transfer" actionType="action" /> */}
             </div>
         </div>
     )

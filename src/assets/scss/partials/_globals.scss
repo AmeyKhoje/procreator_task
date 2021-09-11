@@ -61,3 +61,54 @@ a {
 ul {
     list-style-type: none;
 }
+
+.desktop-menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    background-color: $white;
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
+    z-index: 99;
+    ul {
+        margin: 0;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        li {
+            width: 100%;
+            margin-bottom: 10px;
+            a {
+                width: 100%;
+                padding: 10px;
+                background-color: $blue1;
+                transition: all 0.2s;
+                display: flex;
+                box-sizing: border-box;
+                text-decoration: none;
+                color: $text;
+                border-radius: 10px;
+                &:hover {
+                    background-color: $blue2;
+                }
+            }
+        }
+    }
+}
+
+.layout {
+    &.desktop {
+        .layout-body {
+            width: calc(100% - 200px);
+            margin-left: 200px;
+        }
+    }
+    &.responsive {
+        .layout-body {
+            width: 100%;
+            margin-left: 0;
+        }
+    }
+}

@@ -37,8 +37,6 @@ const Sheet = (props) => {
 
     }, [cloudInfoHeight])
 
-    
-
     return (
         <div className="sheet">
             <div className="search-input">
