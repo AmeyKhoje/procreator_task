@@ -31,7 +31,7 @@ const BottomTabNavigator = (props) => {
                         </NavLink>
                     </li>
                     <li className="bottom-tab_list-item">
-                        <NavLink to="/">
+                        <NavLink to="/profile">
                             <img src={Profile} alt="" />
                         </NavLink>
                     </li>

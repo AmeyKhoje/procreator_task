@@ -1,6 +1,7 @@
 import { Route, Switch, Redirect } from "react-router-dom"
 import HomeScreen from "../pages/HomeScreen"
 import LocalStorage from "../pages/LocalStorage"
+import Profile from "../pages/Profile"
 import Layout from "./Layout"
 
 const RouterComponent = () => {
@@ -8,6 +9,7 @@ const RouterComponent = () => {
         <Switch>
             <RouterWrapper exact path="/home" component={HomeScreen} layout={Layout} />
             <RouterWrapper exact path="/local-storage" component={LocalStorage} layout={Layout} />
+            <RouterWrapper exact path="/profile" component={Profile} layout={Layout} />
             <Redirect to="/home" />
         </Switch>
     )

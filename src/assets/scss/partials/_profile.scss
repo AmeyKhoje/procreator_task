@@ -1,0 +1,128 @@
+.profile {
+    &-head {
+        padding: 25px;
+        align-items: center;
+        h3 {
+            font-size: 34px;
+            color: $text;
+            font-weight: 600;
+        }
+    }
+    &-info {
+        padding: 0 30px 30px 30px;
+        &_flex {
+            align-items: center;
+        }
+        .profile-image {
+            margin-right: 15px;
+            width: max-content;
+            img {
+                width: 80px;
+                height: 80px;
+                border-radius: 35px;
+                box-shadow: 0 12px 20px 0 rgba(131, 133, 163, 0.3);
+            }
+        }
+        .profile-user_details {
+            &-name {
+                font-size: 18px;
+                color: $text;
+                font-weight: 600;
+            }
+            span {
+                font-size: 16px;
+                color: $text;
+                opacity: 0.5;
+                font-weight: 600;
+            }
+        }
+    }
+    &-progress {
+        padding: 0 30px;
+        h4 {
+            font-size: 24px;
+            font-weight: 600;
+            color: $text;
+            span {
+                font-size: 20px;
+                color: $text;
+                opacity: 0.5;
+                font-weight: 600;
+            }
+        }
+        .progress {
+            width: 100%;
+            box-sizing: border-box;
+            height: 6px;
+            background-color: $grey;
+            border-radius: 5px;
+            position: relative;
+            margin-top: 10px;
+            &-show {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 0;
+                height: 100%;
+                background-color: $pink;
+                border-radius: 5px;
+            }
+        }
+    }
+    &-action {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    &-increase_storage {
+        width: 100%;
+        border: 2px solid $pink;
+        border-radius: 50px;
+        padding: 15px;
+        background-color: white;
+        color: $pink;
+        font-weight: 600;
+        margin-top: 15px;
+        width: calc(100% - 50px);
+        margin: 15px auto 0 auto;
+        box-sizing: border-box;
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    &-list {
+        padding: 25px 25px 30px 25px;
+        box-sizing: border-box;
+        overflow-y: scroll;
+    }
+}
+
+.profile-list_card {
+    width: 100%;
+    padding: 25px 15px;
+    box-sizing: border-box;
+    background-color: #f5f7fc;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    &-body {
+        width: calc(100% - 50px);
+        span {
+            color: $text;
+            font-size: 14px;
+            opacity: 0.5;
+            font-weight: 600;
+        }
+    }
+    &-head {
+        font-size: 16px;
+        font-weight: 600;
+        color: $text;
+    }
+    &-action {
+        width: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
