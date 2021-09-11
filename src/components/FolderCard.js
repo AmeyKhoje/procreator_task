@@ -1,5 +1,6 @@
 import { useEffect } from "react"
 import FeatherIcon from 'feather-icons-react';
+import User from "../assets/images/user.jpg"
 
 const FolderCard = (props) => {
     const {
@@ -42,6 +43,23 @@ const FolderCard = (props) => {
                 <p>
                     {f} f {mb > 0 ? mb : gb} {mb > 0 ? " mb" : " gb"}
                 </p>
+            </div>
+            <div className="folder-card_users-flex flex align-center">
+                <div className="users-flex_img">
+                    <img src={User} alt="" />
+                </div>
+                <div className="users-flex_img">
+                    <img src={User} alt="" />
+                </div>
+                <div className="users-flex_img">
+                    <img src={User} alt="" />
+                </div>
+                {
+                    addUsers > 3 &&
+                    <div className="users-flex_img number">
+                        +{addUsers - 3}
+                    </div>
+                }
             </div>
         </button>
     )
