@@ -19,6 +19,15 @@ const FolderCard = (props) => {
             folderCard.style.height = `${singleWidth}px`
         })
         
+    }, [])
+
+    window.addEventListener("resize", () => {
+        let singleWidth = (props.windowWidth - 90) / 2
+        let folderCards = document.querySelectorAll(".folder-card")
+        folderCards.forEach((folderCard) => {
+            folderCard.style.width = `${singleWidth}px`
+            folderCard.style.height = `${singleWidth}px`
+        })
     })
 
     return (

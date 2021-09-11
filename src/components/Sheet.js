@@ -37,6 +37,19 @@ const Sheet = (props) => {
 
     }, [cloudInfoHeight])
 
+    window.addEventListener("resize", () => {
+        let sheet = document.querySelector(".sheet")
+        let sheetContent = document.querySelector(".sheet-content")
+        let sheetContentSelected = document.querySelector(".sheet-content_selected")
+
+        sheet.style.top = `${cloudInfoHeight - 50}px`;
+        sheet.style.height =  `${window.innerHeight - cloudInfoHeight}px`
+        sheetContent.style.marginTop = `${searchInputHeight}px`
+        sheetContentSelected.style.height = `${window.innerHeight - cloudInfoHeight - searchInputHeight - sheetSectionHeight}px`
+
+        setSheetHeight(sheet.getBoundingClientRect().height)
+    })
+
     return (
         <div className="sheet">
             <div className="search-input">
